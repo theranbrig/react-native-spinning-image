@@ -1,0 +1,36 @@
+{
+  "name": "react-native-spinning-image",
+  "version": "1.0.0",
+  "description": "Simple React Native Spinning Image for Loaders or Animated UI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theranbrig/react-native-spinning-image"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "spinner",
+    "loader",
+    "react",
+    "react native",
+    "react component",
+    "spinning",
+    "loading"
+  ],
+  "author": "Theran Brigowatz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theranbrig/react-native-spinning-image/issues"
+  },
+  "homepage": "https://github.com/theranbrig/react-native-spinning-image#readme",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.54.0"
+  },
+  "peerDependencies": {
+    "react-native": "^0.59.8"
+  }
+}
