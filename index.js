@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   }
 });
 
-class SpinningImageLoader extends Component {
+class SpinningImage extends Component {
   constructor() {
     super();
     this.state = { stopAnimation: false };
@@ -56,8 +56,8 @@ class SpinningImageLoader extends Component {
       <View style={styles.container}>
         <Animated.Image
           style={{
-            width,
-            height,
+            width: width || 200,
+            height: height || 200,
             transform: [{ rotate: spin }]
           }}
           source={typeof source === 'string' ? { uri: `${source}` } : { source }}
@@ -67,4 +67,4 @@ class SpinningImageLoader extends Component {
   }
 }
 
-export default SpinningImageLoader;
+export default SpinningImage;
