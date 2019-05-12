@@ -35,19 +35,19 @@ const imageSource = require('../PathToImage');
 Add the Loader to your component.
 
 ```js
-<SpinningImageLoader source={imageSource} />
+<SpinningImage source={imageSource} />
 ```
 
 or
 
 ```js
-<SpinningImageLoader source='https://link-to-image' />
+<SpinningImage source='https://link-to-image' />
 ```
 
 You can also adjust settings like in the example below:
 
 ```js
-<SpinningImageLoader
+<SpinningImage
   source={imageSource}
   speed={3000}
   rotations={5}
@@ -61,14 +61,16 @@ You can also adjust settings like in the example below:
 
 | Property     | Default  | Description                                                                                                                                                   |
 | ------------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`source`** | **None** | **Image source. Enter as a string if using a web url and use a require variable if using a local image as shown above. This requires a value to be entered.** |
-| `speed`      | 5000     | Speed of image rotation in milliseconds. A higher number is a slower rotation speed.                                                                                                                 |
+| **`source`** | **None** | **Image source. Enter as a string if using a web url and use a require variable if using a local image as shown in the above example. A source property is required.** |
+| `speed`      | 5000     | Speed of image rotation in milliseconds. A higher number is a slower rotation speed.                                                                          |
 | `rotations`  | null     | Set number of rotations for image to spin. It will spin infinitely without an entered property value or a property value of 0                                 |
 | `height`     | 200      | Sets height of image                                                                                                                                          |
 | `width`      | 200      | Sets width of image                                                                                                                                           |
-| direction    | null     | Set to "counter" to make it spin counterclockwise.                                                                                                            |
+| `direction`  | null     | Set to "counter" to make it spin counterclockwise.                                                                                                            |
 
 ## Issues
+
+- As of now this is written as a class component since React Hooks do not work well with some tools like Expo.  Once it becomes stable I will switch this over to a React Hook.
 
 Address any issues or feature requests @
 

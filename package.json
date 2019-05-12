@@ -1,6 +1,6 @@
 {
   "name": "react-native-spinning-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple React Native Spinning Image for Loaders or Animated UI",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,9 @@
     "react native",
     "react component",
     "spinning",
-    "loading"
+    "loading",
+    "picture",
+    "image"
   ],
   "author": "Theran Brigowatz",
   "license": "MIT",
